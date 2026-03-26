@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TradeRAMS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {background:#0D1B2E;color:white;font-family:Arial;padding:20px;}
+input {width:100%;padding:10px;margin:10px 0;}
+button,a {display:block;padding:12px;background:#FF6B1A;color:white;text-align:center;margin-top:10px;text-decoration:none;border:none;}
+#out {margin-top:15px; white-space:pre-wrap;}
+</style>
+</head>
 
+<body>
+
+<h1>TradeRAMS</h1>
+
+<input id="task" placeholder="Task">
+<input id="location" placeholder="Location">
+
+<button onclick="go()">Generate RAMS</button>
+
+<div id="out"></div>
+
+<a href="https://buy.stripe.com/cNi9AM6e914edVkdUOdZ600" target="_blank">
+Buy RAMS – £19
+</a>
+
+<script>
+function go(){
+let t=document.getElementById('task').value;
+let l=document.getElementById('location').value;
+document.getElementById('out').innerText="Task: "+t+"\nLocation: "+l;
+}
+</script>
+
+</body>
+</html>
