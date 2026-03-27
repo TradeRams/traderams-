@@ -1,20 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TradeRAMS – Download Professional RAMS</title>
+  <title>TradeRAMS – Professional RAMS Downloads</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: white;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #cbd5f5;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      margin-top: 20px;
+      background: #22c55e;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .button-secondary {
+      background: #334155;
+      margin-left: 10px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    .price {
+      font-size: 28px;
+      margin: 15px 0;
+      color: #22c55e;
+    }
+
+    .highlight {
+      background: #f59e0b;
+      color: black;
+    }
+  </style>
 </head>
 
 <body>
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Professional RAMS. Instantly Downloadable.</h1>
-  <p>Built by industry professionals. Designed for approval. Ready in minutes.</p>
+  <h1>Professional RAMS. Ready to Download.</h1>
+  <p>Tier 1 standard RAMS built for engineers, contractors and critical sites.</p>
 
-  <a href="#buy" class="button">Buy RAMS</a>
-  <a href="#about" class="button-secondary">Learn More</a>
+  <a href="#buy" class="button">View RAMS</a>
+  <a href="#about" class="button button-secondary">Why TradeRAMS</a>
 </div>
 
 <!-- ABOUT -->
@@ -26,43 +99,63 @@
 
       <div class="card">
         <h3>Tier 1 Standard</h3>
-        <p>Built to data centre and high-risk site expectations.</p>
+        <p>Built to data centre and high-risk site standards.</p>
       </div>
 
       <div class="card">
         <h3>No Rejections</h3>
-        <p>If your RAMS gets rejected, we fix it FREE.</p>
+        <p>If your RAMS are rejected, we fix them free.</p>
       </div>
 
       <div class="card">
         <h3>Instant Download</h3>
-        <p>No waiting. No delays. Get your RAMS immediately.</p>
+        <p>No waiting. Get your RAMS immediately.</p>
       </div>
 
     </div>
   </div>
 </div>
 
-<!-- BUY -->
+<!-- PRICING -->
 <div class="section" id="buy">
-  <h2>Download Now</h2>
+  <h2>Download RAMS</h2>
 
   <div class="container">
-    <div class="card" style="text-align:center;">
+    <div class="grid">
 
-      <h3>HVAC Tier 1 RAMS</h3>
-      <p>Full professional RAMS document for HVAC PPM works. Built to Tier 1 standard.</p>
+      <!-- SINGLE -->
+      <div class="card">
+        <h3>HVAC Tier 1 RAMS</h3>
+        <p>Professional RAMS built to Tier 1 standard.</p>
+        <div class="price">£34.99</div>
+        <a href="https://buy.stripe.com/28E9AM9qlbIS5oO3gadZ602" class="button">
+          Buy Now
+        </a>
+      </div>
 
-      <div class="price">£49</div>
+      <!-- CORE PACK -->
+      <div class="card">
+        <h3>HVAC Core Pack</h3>
+        <p>VRV, CRAC & Chiller RAMS</p>
+        <div class="price">£79.99</div>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
 
-      <!-- THIS MATCHES YOUR FILE NAME -->
-      <a href="traderams-tier1-hvac.pdf" class="button" download>
-        Download RAMS Now
-      </a>
+      <!-- HIGH RISK -->
+      <div class="card">
+        <h3>High Risk Works Pack</h3>
+        <p>WAH, LOTO, Hot Works & Brazing</p>
+        <div class="price">£99.99</div>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
 
-      <p class="note">
-        Instant download. (Next step = payments)
-      </p>
+      <!-- FULL PACK -->
+      <div class="card highlight">
+        <h3>Full TradeRAMS Pack</h3>
+        <p>Complete RAMS library – best value</p>
+        <div class="price">£149.99</div>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
 
     </div>
   </div>
