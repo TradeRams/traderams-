@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>TradeRAMS – Professional RAMS Downloads</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeRAMS – Professional RAMS Downloads</title>
 
   <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -12,29 +16,25 @@
       color: white;
     }
 
+    h1, h2, h3 { margin-top: 0; }
+
+    p { color: #cbd5e1; }
+
     .hero {
-      padding: 80px 20px;
+      padding: 90px 20px;
       text-align: center;
       background: linear-gradient(135deg, #0f172a, #1e293b);
     }
 
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: #cbd5f5;
-    }
+    .hero h1 { font-size: 40px; }
 
     .button {
       display: inline-block;
       padding: 12px 20px;
-      margin-top: 20px;
+      margin-top: 15px;
       background: #22c55e;
       color: white;
-      text-decoration: none;
-      border-radius: 6px;
+      border-radius: 8px;
       font-weight: bold;
     }
 
@@ -44,12 +44,14 @@
     }
 
     .section {
-      padding: 60px 20px;
+      padding: 70px 20px;
       text-align: center;
     }
 
+    .section-alt { background: #111827; }
+
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
     }
 
@@ -63,18 +65,36 @@
     .card {
       background: #1e293b;
       padding: 25px;
-      border-radius: 10px;
+      border-radius: 12px;
+      text-align: left;
     }
 
-    .price {
-      font-size: 28px;
-      margin: 15px 0;
-      color: #22c55e;
-    }
+    .card.center { text-align: center; }
 
     .highlight {
       background: #f59e0b;
       color: black;
+    }
+
+    .price {
+      font-size: 28px;
+      margin: 10px 0;
+      color: #22c55e;
+      font-weight: bold;
+    }
+
+    .small { font-size: 14px; color: #94a3b8; }
+
+    ul {
+      padding-left: 18px;
+      color: #cbd5e1;
+    }
+
+    .footer {
+      padding: 30px;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -84,81 +104,164 @@
 <!-- HERO -->
 <div class="hero">
   <h1>Professional RAMS. Ready to Download.</h1>
-  <p>Tier 1 standard RAMS built for engineers, contractors and critical sites.</p>
+  <p>Tier 1 RAMS built for HVAC, building services and critical environments.</p>
 
-  <a href="#buy" class="button">View RAMS</a>
+  <a href="#individual" class="button">View RAMS</a>
   <a href="#about" class="button button-secondary">Why TradeRAMS</a>
 </div>
 
 <!-- ABOUT -->
 <div class="section" id="about">
-  <h2>Why TradeRAMS?</h2>
-
   <div class="container">
+    <h2>Why TradeRAMS?</h2>
+
     <div class="grid">
-
-      <div class="card">
+      <div class="card center">
         <h3>Tier 1 Standard</h3>
-        <p>Built to data centre and high-risk site standards.</p>
+        <p>Built to real site expectations and high-risk environments.</p>
       </div>
 
-      <div class="card">
-        <h3>No Rejections</h3>
-        <p>If your RAMS are rejected, we fix them free.</p>
+      <div class="card center">
+        <h3>Free Amendments</h3>
+        <p>If our RAMS are rejected, we fix them free.</p>
       </div>
 
-      <div class="card">
-        <h3>Instant Download</h3>
-        <p>No waiting. Get your RAMS immediately.</p>
+      <div class="card center">
+        <h3>Instant Access</h3>
+        <p>Download immediately and use on your jobs.</p>
       </div>
-
     </div>
   </div>
 </div>
 
-<!-- PRICING -->
-<div class="section" id="buy">
-  <h2>Download RAMS</h2>
-
+<!-- INDIVIDUAL RAMS -->
+<div class="section section-alt" id="individual">
   <div class="container">
+    <h2>Individual RAMS</h2>
+
     <div class="grid">
-
-      <!-- SINGLE -->
       <div class="card">
-        <h3>HVAC Tier 1 RAMS</h3>
-        <p>Professional RAMS built to Tier 1 standard.</p>
-        <div class="price">£34.99</div>
-        <a href="https://buy.stripe.com/28E9AM9qlbIS5oO3gadZ602" class="button">
-          Buy Now
-        </a>
+        <h3>Working at Height</h3>
+        <div class="price">£19.99</div>
       </div>
 
-      <!-- CORE PACK -->
       <div class="card">
-        <h3>HVAC Core Pack</h3>
-        <p>VRV, CRAC & Chiller RAMS</p>
-        <div class="price">£79.99</div>
-        <a href="#" class="button">Coming Soon</a>
+        <h3>LOTO / Electrical</h3>
+        <div class="price">£24.99</div>
       </div>
 
-      <!-- HIGH RISK -->
       <div class="card">
-        <h3>High Risk Works Pack</h3>
-        <p>WAH, LOTO, Hot Works & Brazing</p>
-        <div class="price">£99.99</div>
-        <a href="#" class="button">Coming Soon</a>
+        <h3>Hot Works</h3>
+        <div class="price">£24.99</div>
       </div>
 
-      <!-- FULL PACK -->
-      <div class="card highlight">
-        <h3>Full TradeRAMS Pack</h3>
-        <p>Complete RAMS library – best value</p>
-        <div class="price">£149.99</div>
-        <a href="#" class="button">Coming Soon</a>
+      <div class="card">
+        <h3>Brazing</h3>
+        <div class="price">£29.99</div>
       </div>
 
+      <div class="card">
+        <h3>HVAC PPM</h3>
+        <div class="price">£29.99</div>
+        <a href="https://buy.stripe.com/28E9AM9qlbIS5oO3gadZ602" class="button">Buy & Download</a>
+      </div>
+
+      <div class="card">
+        <h3>Data Centre RAMS</h3>
+        <div class="price">£39.99</div>
+      </div>
     </div>
   </div>
+</div>
+
+<!-- BUNDLES -->
+<div class="section">
+  <div class="container">
+    <h2>Bundles</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Core Bundle</h3>
+        <div class="price">£79.99</div>
+        <p>Essential RAMS for HVAC works</p>
+      </div>
+
+      <div class="card">
+        <h3>High Risk Bundle</h3>
+        <div class="price">£99.99</div>
+        <p>WAH, LOTO, Hot Works & Brazing</p>
+      </div>
+
+      <div class="card highlight">
+        <h3>Complete Bundle</h3>
+        <div class="price">£119.99</div>
+        <p>All RAMS included – best value</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUBSCRIPTION -->
+<div class="section section-alt">
+  <div class="container">
+    <h2>Unlimited Subscription</h2>
+
+    <div class="grid">
+      <div class="card center"><h3>Monthly</h3><div class="price">£59.99</div></div>
+      <div class="card center"><h3>3 Months</h3><div class="price">£149.99</div></div>
+      <div class="card center"><h3>6 Months</h3><div class="price">£269.99</div></div>
+      <div class="card center"><h3>9 Months</h3><div class="price">£359.99</div></div>
+      <div class="card center highlight"><h3>12 Months</h3><div class="price">£449.99</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- REJECTED RAMS -->
+<div class="section">
+  <div class="container">
+    <h2>Rejected RAMS Correction</h2>
+
+    <div class="grid">
+      <div class="card center">
+        <h3>Minor</h3>
+        <div class="price">£39.99</div>
+      </div>
+
+      <div class="card center">
+        <h3>Standard</h3>
+        <div class="price">£69.99</div>
+      </div>
+
+      <div class="card center">
+        <h3>Major Rewrite</h3>
+        <div class="price">From £119.99</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section section-alt">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+  </div>
+</div>
+
+<!-- TERMS -->
+<div class="section">
+  <div class="container">
+    <h2>Terms</h2>
+    <p class="small">
+      Digital products are non-refundable once delivered. RAMS must be reviewed before use.
+      Free amendments apply only to TradeRAMS documents.
+    </p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 TradeRAMS
 </div>
 
 </body>
